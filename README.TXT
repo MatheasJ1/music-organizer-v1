@@ -1,16 +1,2 @@
-Project: music-organizer-v1. A project to collect audio files.
-Authors: David J. Barnes and Michael Kölling
-
-This project is part of the material for the book
-
-   Objects First with Java - A Practical Introduction using BlueJ
-   Seventh edition
-   David J. Barnes and Michael Kölling
-
-It is discussed in chapter 4.
-
-To start:
-
-Create a MusicOrganizer object on the object bench.
-Use its methods to add, show, and remove files.
+This was done with David Shlaifer 2387790 sect.00002.
 
