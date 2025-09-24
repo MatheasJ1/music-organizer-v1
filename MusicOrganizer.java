@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class MusicOrganizer
 {
     // An ArrayList for storing the file names of music files.
-    private ArrayList<String> files;
+    public ArrayList<String> files;
         
     /**
      * Create a MusicOrganizer
@@ -43,9 +43,11 @@ public class MusicOrganizer
      */
     public void listFile(int index)
     {
-        if(index >= 0 && index < files.size()) {
+        if(ValidIndex(index)) {
             String filename = files.get(index);
             System.out.println(filename);
+        } else {
+            System.out.println("Invalid index :" + index);
         }
     }
     
@@ -55,8 +57,22 @@ public class MusicOrganizer
      */
     public void removeFile(int index)
     {
-        if(index >= 0 && index < files.size()) {
+        if(ValidIndex(index)) {
             files.remove(index);
+        } else {
+            System.out.println("Invalid index :" + index);
         }
     }
+    
+    public boolean ValidIndex(int index){
+        int size = files.size();
+        if (files.size() > 0 || files.size() < files.size()-1) {
+            return true;
+            
+        } else {
+            return false;
+        }
+    }
+    
+    
 }
